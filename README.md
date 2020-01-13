@@ -12,7 +12,7 @@ This is a Chrome Extension and helps in the management of cases.
 6) Add comments for your cases, wherever necessary <br>
    <img src="https://github.com/vijaysaayi/CaseManagement/blob/master/Images/05%20-%20Important%20Case%20Details.png" width="800">
 
-## Sneak Peek :
+## Sneak Peak :
 <img src="https://github.com/vijaysaayi/CaseManagement/blob/master/Images/07%20-%20Categorized%20View%20.png" width="825">
 
 ## To get access to the tool / Share your feedback :
