@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <script src="/JS/background.js"></script>
+    <script src="/JS/ccTOph.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+
+<body style="background:rgb(221, 208, 151)">
+
+    <div id="pagetitle" style="font-size:40px;align-content: center;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        My Cases & Tasks:
+    </div>
+
+    <br>
+    <button id="viewCases"> View Cases </button>
+    <button id="settings"> Settings </button>
+    <button id="addComments"> Add/Edit Comments </button>
+    <button id="save" style='visibility: hidden;display: none'> Save Comments added </button>
+    <br>
+    <div id="settingsPage" style="visibility:hidden;display: none">
+        <br>
+        <input id="enteredText" type="text" autofocus style="width:100px">
+        <input type="color" id="colorbox" value="#e66465">
+        <button id="addCategory" style="width:135px"> Add New Category </button>
+        <br>
+        <select id="CC" name="currentCategory" style="width:130px">
+        </select>
+        <button id="removeCategory" style="width:150px"> Remove Category </button>
+
+        <BR>
+        <div id="statusbox" style="font-size:18px;align-content: center;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+            Case Status :
+            <select id="CS" name="casestatus" style="width:100px">
+                <option value="Open">Open</option>
+                <option value="Closed">Closed</option>
+            </select>
+            <br> Background Colour :
+            <input type="color" id="bg-colorbox" value="#ddd097">
+
+        </div>
+
+    </div>
+
+    <br>
+    <br>
+
+    <div id="cases" style="font-size: 20px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+        Loading ...
+        <br>
+        <div class="lds-ring">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+    <style>
+        table,
+        th,
+        td {
+            padding: 7px;
+            text-align: left;
+            border: 1px solid black;
+        }
+        
+        table {
+            padding: 1px;
+        }
+    </style>
+
+</body>
+
+</html>

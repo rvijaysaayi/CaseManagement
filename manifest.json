@@ -1,0 +1,51 @@
+{
+    "manifest_version": 2,
+    "name": "Case Management",
+    "version": "2.1",
+    "browser_action": {
+       "default_icon": {
+          "256": "SDicon.png"
+       },
+       "default_popup": "/HTML/popup.html",
+       "default_title": "SD Case Management Extension"
+    },
+    "commands": {
+       "_execute_browser_action": {
+          "suggested_key": {
+             "default": "Ctrl+I",
+             "windows": "Ctrl+I",
+             "mac": "Ctrl+I",
+             "chromeos": "Ctrl+I",
+             "linux": "Ctrl+I"
+          }
+       }
+    },
+    "web_accessible_resources": [
+       "/HTML/bin.html"
+    ],
+    "background": {
+       "persistent": true,
+       "scripts": [
+          "/JS/background.js"
+       ]
+    },
+    "icons": {
+       "16": "SDicon.png"
+    },
+    "content_scripts": [
+      {
+      "matches": [
+          "Azure Support Centre URL",
+          "Service Desk URL",
+          "SD API Call"
+          ],
+      "js": ["/JS/content.js"],
+      "run_at": "document_end"         
+      }
+   ],
+    "permissions": [
+       "activeTab",
+       "storage",
+       "contextMenus"
+    ]
+ }
